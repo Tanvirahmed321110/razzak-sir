@@ -212,12 +212,12 @@ img{
 /* social media */
 .social-media{
     padding: 15px;
-    margin: 12px 0;
+    margin: 20px 0 0 0;
     background-color: black;
     border-radius: 0px 0px 32px 32px;
 }
 .social-media i{
-    margin: 0 12px;
+    margin: 0 12px ;
     font-size: 1.9rem;
     color:rgb(201, 55, 55);
     transition: all .3s linear;
@@ -250,7 +250,7 @@ img{
 
 
 @media screen and (max-width:750px){
-    body{padding: 0  10px 30px 10px;}
+    body{padding: 0  10px 40px 10px;}
     .btn-container{
         width: 95%;
     }
@@ -258,3 +258,5 @@ img{
         width: 85%;
     }
 }
+
+/* finished */
