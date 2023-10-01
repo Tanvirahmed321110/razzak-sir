@@ -1,0 +1,260 @@
+/* global css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+    padding-bottom: 15px;
+}
+img{
+    width: 100%;
+    height: 200px;
+    border-radius: 35px 35px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*
+  ======= profile  =======
+*/
+ 
+ 
+ #profile{
+    margin:25px auto;
+    width: 45%;
+    min-width: 410px;
+    height: 810px;
+    border-radius: 35px;
+    box-shadow:rgb(0 0 0 / 20%) 0 20px 90px;
+    background-color: white;
+    transition: all linear .4s;
+ }
+ #profile:hover{
+    box-shadow: black 0 22px 33px;
+ }
+ .profile-bg{
+    position: relative;
+    z-index: 1;
+ }
+/* profile-image */
+.profile-image {
+    box-shadow: 0 5px 22px 5px rgb(54, 51, 45);
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -75px;
+}
+.profile-image img{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    transition: all linear .4s;
+    position: relative;
+    z-index: 11 !important;
+}
+/* hover in profile image */
+.profile-image:hover.profile-image img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+/* 
+  ======= text info  =========
+*/
+.text-info{
+    text-align: center;
+}
+
+.about-me{
+    /* padding: 5px 25px; */
+    padding: 2% 5%;
+    text-align: left;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.about-me h4{
+    color: rgb(46, 45, 45);
+    padding: 5px 0;
+}
+.about-me p{
+    font-weight: 400;
+    letter-spacing: .4px;
+    color: #646363;
+    word-spacing:1px;
+    text-align: justify;
+}
+
+.about-me div{
+    margin: 12px 0;
+    font-family: system-ui, -apple-system;
+}
+.contact{
+    margin: 24px 0;
+    background-color: #f1f1f1;
+    padding: 5px 25px;
+}
+.contact-item{
+    display: flex;
+    gap:17px;
+    align-items: center;
+    margin: 8px 0;
+}
+.contact-item p{
+    color:#808080;
+    letter-spacing: .4px;
+}
+.icon{
+    background-color: blueviolet;
+    width: 35px;
+    padding:7px 2px ;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.icon i{
+    font-size: 1.14rem;
+    transition: all linear .4s;
+}
+
+
+/* hover in icon */
+.icon:hover.icon i{
+    color: rgb(72, 255, 0);
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: rgb(67, 86, 253);
+}
+.address{
+    width: 290px;
+    text-align: left;
+}
+
+
+
+
+
+
+/* btn container */
+.btn-container{
+    margin: 25px auto;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    justify-content: center;
+}
+.btn{
+    background-color: rgb(136, 184, 41);
+    color: white;
+    padding: 9px 18px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 152px;
+    transition: all ease-in-out .5s;
+}
+#btn-add-contact{
+    border-radius: 60px 0 55px 0;
+}
+#btn-call-now{
+    border-radius: 0 55px 0 44px;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+
+
+.profile-bg img{
+    position: relative;
+}
+
+/* btn dark mode */
+#btn-dark-mode{
+    display: inline-block;
+    position: absolute;
+    z-index: 112 !important;
+    top:0px;
+    right: 0%;
+    background-color: black;
+    width: 120px;
+    border-radius: 0 33px;
+}
+
+/* btn follow */
+#btn-follow{
+    width: 64%;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: blueviolet;
+    border-radius:55px
+}
+#btn-follow:hover{
+    background-color: orange;
+}
+
+
+
+
+
+/* social media */
+.social-media{
+    padding: 15px;
+    margin: 12px 0;
+    background-color: black;
+    border-radius: 0px 0px 32px 32px;
+}
+.social-media i{
+    margin: 0 12px;
+    font-size: 1.9rem;
+    color:rgb(201, 55, 55);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.social-media i:hover{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+/* 
+    ====== responsive ======
+*/
+
+
+@media screen and (max-width:1150px){
+    .btn-container{
+        width: 85%;
+    }
+    #profile{
+        width: 54%;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    body{padding: 0  10px 30px 10px;}
+    .btn-container{
+        width: 95%;
+    }
+    #btn-follow{
+        width: 85%;
+    }
+}
