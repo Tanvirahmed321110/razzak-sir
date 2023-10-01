@@ -20,7 +20,7 @@ img{
 }
 
 /*
-  ======= profile  =======
+  ========= profile  ===========
 */
  
  
@@ -68,9 +68,7 @@ img{
 
 
 
-/* 
-  ======= text info  =========
-*/
+/* =========== text info  ===============  */
 .text-info{
     text-align: center;
 }
@@ -249,14 +247,33 @@ img{
 }
 
 
-@media screen and (max-width:750px){
-    body{padding: 0  10px 40px 10px;}
+@media screen and (max-width:768px){
+    #profile{
+        width: 100%;
+        margin: 0;
+        border-radius:0;
+    }
+    body{padding: 0% !important;}
     .btn-container{
         width: 95%;
     }
     #btn-follow{
-        width: 85%;
+        width: 82%;
+    }
+    img{
+        border-radius: 0;
+    }
+    .social-media{
+        border-radius: 0;
+    }
+    #btn-dark-mode{
+        border-radius:0 0 0 28px  ;
+    }
+    .btn-container{
+        gap:20%
     }
 }
+
+
 
 /* finished */
