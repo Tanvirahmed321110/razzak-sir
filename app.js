@@ -23,20 +23,27 @@ btnFollow.addEventListener('click',function(){
 let btnDark =document.getElementById('btn-dark-mode')
 
 btnDark.addEventListener('click',()=>{
-    const mainProfile = document.getElementById('profile')
+    const mainProfile = document.getElementById('profile');
+    const aboutMe = document.querySelector('.about-me p');
+    const h4 = document.querySelector('.h4')
+    let icon='<i class="fa-regular fa-sun"></i>'
     
-    if(btnDark.innerText==='Dark Mode'){
-        btnDark.innerText='Light Mode'
+    if(btnDark.innerHTML==='Dark <i class="fa-regular fa-moon"></i>'){
+        btnDark.innerHTML=`Light ${icon}`
         btnDark.style.backgroundColor='orange';
         
         mainProfile.style.backgroundColor='navy'
         mainProfile.style.color='white'
+        aboutMe.style.color='white'
+        h4.style.color='white'
     }
     else{
-        btnDark.innerText='Dark Mode';
+        btnDark.innerHTML=`Dark <i class="fa-regular fa-moon"></i>`;
         btnDark.style.backgroundColor='black';
         mainProfile.style.backgroundColor='white';
         mainProfile.style.color='black'
+        aboutMe.style.color='#808080'
+        h4.style.color='red'
     }
     
 })
